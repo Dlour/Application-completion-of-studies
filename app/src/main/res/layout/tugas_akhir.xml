@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="10dp"
+    android:layout_marginTop="10dp"
+    tools:context=".ListTugasActivity"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Faqris Musgamy"
+        android:background="@drawable/border_text"
+        android:id="@+id/namaMhs"
+        android:fontFamily="@font/sorareguler"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="220201050102"
+        android:background="@drawable/border_text"
+        android:id="@+id/nimMhs"
+        android:fontFamily="@font/sorareguler"
+        android:layout_marginStart="20dp"/>
+        <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Judul "
+        android:background="@drawable/border_text"
+        android:id="@+id/judulTugas"
+        android:fontFamily="@font/sorareguler"
+        android:layout_marginStart="20dp"/>
+
+        <ToggleButton
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="Acc"
+            android:textOff="Menunggu"
+            android:id="@+id/togglebtn"
+            android:layout_gravity="end"/>
+
+    </LinearLayout>
+    </ScrollView>
+
+
+    
+
+
+
+
+</androidx.cardview.widget.CardView>

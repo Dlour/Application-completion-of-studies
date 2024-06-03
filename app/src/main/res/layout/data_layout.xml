@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <TextView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Nama"
+        android:fontFamily="@font/soramedium"
+        android:id="@+id/dataNama"
+        />
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@id/dataNama"
+        app:layout_constraintStart_toStartOf="@id/dataNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nim"
+        android:fontFamily="@font/soramedium"
+        android:textColor="@color/black"
+        android:id="@+id/dataNim"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="prodi"
+        android:fontFamily="@font/soramedium"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/dataNim"
+        app:layout_constraintStart_toStartOf="@id/dataNim"
+        android:id="@+id/dataProdi"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="angkatan"
+            app:layout_constraintTop_toBottomOf="@id/dataProdi"
+            app:layout_constraintStart_toStartOf="@id/dataProdi"
+            android:fontFamily="@font/soramedium"
+            android:textColor="@color/black"
+            android:id="@+id/dataAngkatan"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="email"
+        android:fontFamily="@font/soramedium"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/dataAngkatan"
+        app:layout_constraintStart_toStartOf="@id/dataAngkatan"
+        android:id="@+id/dataEmail"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sks"
+        android:id="@+id/dataSks"
+        android:fontFamily="@font/soramedium"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/dataEmail"
+        app:layout_constraintStart_toStartOf="@id/dataEmail"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IPK"
+        android:fontFamily="@font/soramedium"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/dataYudisium"
+        app:layout_constraintStart_toStartOf="@id/dataYudisium"
+        android:id="@+id/dataIPK"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yudisium"
+        android:id="@+id/dataYudisium"
+        android:fontFamily="@font/soramedium"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/dataSks"
+        app:layout_constraintStart_toStartOf="@id/dataSks"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/dataYudisium"
+        android:backgroundTint="@color/teal"
+        android:text="Ubah"
+        android:id="@+id/ubahMhs"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:id="@+id/deleteData"
+        android:layout_marginStart="10dp"
+        app:layout_constraintTop_toBottomOf="@id/dataYudisium"
+        app:layout_constraintStart_toEndOf="@id/ubahMhs"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/baseline_person_24"
+        android:id="@+id/foto_mahasiswa"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/dataProdi"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="50dp"
+
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:gravity="center"
+    tools:context=".ProfileFragment">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:backgroundTint="@color/teal"
+        android:src="@drawable/baseline_person_24"
+        android:id="@+id/foto_profile"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="40dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:hint="Nama Mahasiswa"
+        android:inputType="text"
+        android:layout_margin="10dp"
+        android:background="@drawable/border_text"
+        android:elevation="5dp"
+        android:id="@+id/nama_mahasiswa"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:hint="Nim Mahasiswa"
+        android:inputType="text"
+        android:layout_margin="10dp"
+        android:background="@drawable/border_text"
+        android:elevation="5dp"
+        android:id="@+id/nim_mahasiswa"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:hint="Program Studi Mahasiswa"
+        android:inputType="text"
+        android:layout_margin="10dp"
+        android:background="@drawable/border_text"
+        android:elevation="5dp"
+        android:id="@+id/prodi_mahasiswa"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:hint="Angkatan Mahasiswa"
+        android:inputType="text"
+        android:layout_margin="10dp"
+        android:background="@drawable/border_text"
+        android:elevation="5dp"
+        android:id="@+id/angkatan_mahasiswa"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:hint="Satuan Kredit Semeseter Mahasiswa"
+        android:inputType="text"
+        android:layout_margin="10dp"
+        android:background="@drawable/border_text"
+        android:elevation="5dp"
+        android:id="@+id/sks_mahasiswa"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:hint="Indeks Prestasi Kumulatif"
+        android:inputType="text"
+        android:layout_margin="10dp"
+        android:background="@drawable/border_text"
+        android:elevation="5dp"
+        android:id="@+id/ipk_mahasiswa"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:hint="Tanggal Yudisium"
+        android:inputType="text"
+        android:layout_margin="10dp"
+        android:background="@drawable/border_text"
+        android:elevation="5dp"
+        android:id="@+id/yudisium_mahasiswa"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/teal"
+            android:text="Update Profile"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="20sp"
+            android:id="@+id/updateProfile"/>
+
+        <ProgressBar
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:indeterminateTint="@color/teal"
+            android:layout_gravity="center"
+            android:id="@+id/progress"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@android:color/holo_red_light"
+        android:id="@+id/logoutbtn"
+        />
+
+
+
+</LinearLayout>

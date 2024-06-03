@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "230572345840",
+    "project_id": "rekayasapl-4da1c",
+    "storage_bucket": "rekayasapl-4da1c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:230572345840:android:b447ca49c5799a598e3535",
+        "android_client_info": {
+          "package_name": "com.example.tugas_rpl"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDey3NEevP65iKTkRlohY_JtifIXY5stVk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

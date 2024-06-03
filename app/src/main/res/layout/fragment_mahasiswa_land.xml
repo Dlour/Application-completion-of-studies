@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".mahasiswaLandFragment">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="22dp"
+
+            android:weightSum="2">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sora_semibold"
+                android:textColor="@color/teal"
+                android:text="Data Mahasiswa"
+                android:layout_marginStart="20dp"
+                android:textSize="24dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Mahasiswa"
+                android:fontFamily="@font/sora_semibold"/>
+
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="M.Daffa"
+                android:background="@drawable/border_text"
+                android:id="@+id/nama_mhs"
+                android:fontFamily="@font/sorareguler"
+                android:layout_marginStart="20dp"/>
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sora_semibold"
+                android:text="NIM  "/>
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="220210501047"
+                android:background="@drawable/border_text"
+                android:id="@+id/nim_mhs"
+                android:fontFamily="@font/sorareguler"
+                android:layout_marginStart="20dp"/>
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Program Studi"
+                android:fontFamily="@font/sora_semibold"/>
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Teknik Komputer"
+                android:background="@drawable/border_text"
+                android:id="@+id/prodi_mhs"
+                android:fontFamily="@font/sorareguler"
+                android:layout_marginStart="20dp"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Angkatan"
+                android:fontFamily="@font/sora_semibold"/>
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="2022"
+                android:background="@drawable/border_text"
+                android:id="@+id/angkatan_mhs"
+                android:fontFamily="@font/sorareguler"
+                android:layout_marginStart="20dp"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Satuan Kredit Semester"
+                android:fontFamily="@font/sora_semibold"/>
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="144"
+                android:background="@drawable/border_text"
+                android:id="@+id/sks_mhs"
+                android:fontFamily="@font/sorareguler"
+                android:layout_marginStart="20dp"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Indeks Prestasi Kumulatif"
+                android:fontFamily="@font/sora_semibold"/>
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="4.0"
+                android:background="@drawable/border_text"
+                android:id="@+id/ipk_mhs"
+                android:fontFamily="@font/sorareguler"
+                android:layout_marginStart="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yudisium"
+                android:fontFamily="@font/sora_semibold"/>
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Belum Acc"
+                android:background="@drawable/border_text"
+                android:id="@+id/yudisium_mhs"
+                android:fontFamily="@font/sorareguler"
+                android:layout_marginStart="20dp"/>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/teal"
+                android:text="Ubah"
+                android:id="@+id/btnubah"
+                android:fontFamily="@font/sora_semibold"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="120dp"/>
+
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:weightSum="2">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jurnal/Skripsi Mahasiswa"
+                    android:fontFamily="@font/sora_semibold"
+                    android:textColor="@color/teal"
+                    android:layout_marginStart="20dp"/>
+
+
+            </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload Tugas"
+                android:id="@+id/btnupload"
+                android:backgroundTint="@color/teal"
+                android:fontFamily="@font/sora_semibold"
+                />
+
+        <Button
+            android:id="@+id/listtugas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:backgroundTint="@color/teal"
+            android:layout_marginStart="160dp"
+            android:fontFamily="@font/sora_semibold"
+            android:text="List Tugas Anda "/>
+    </FrameLayout>
+
+
+
+
+
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/test2"/>
+
+
+
+
+</FrameLayout>
